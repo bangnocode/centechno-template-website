@@ -119,7 +119,7 @@
         <!-- Mobile Menu -->
         <div class="md:hidden bg-white/95 backdrop-blur-md border-t border-slate-100 hidden" id="mobile-menu">
             <div class="px-4 py-6 space-y-4">
-                <a href="#home"
+                <a href="javascript:void(0);" onclick="scrollToSection('home', event)"
                     class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
                     onclick="closeMenu()">
                     <div class="flex items-center">
@@ -130,7 +130,7 @@
                         Beranda
                     </div>
                 </a>
-                <a href="#about"
+                <a href="javascript:void(0);" onclick="scrollToSection('about', event)"
                     class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
                     onclick="closeMenu()">
                     <div class="flex items-center">
@@ -142,7 +142,7 @@
                         Tentang
                     </div>
                 </a>
-                <a href="#services"
+                <a href="javascript:void(0);" onclick="scrollToSection('services', event)"
                     class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
                     onclick="closeMenu()">
                     <div class="flex items-center">
@@ -152,7 +152,7 @@
                         Layanan
                     </div>
                 </a>
-                <a href="#template"
+                <a href="javascript:void(0);" onclick="scrollToSection('template', event)"
                     class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
                     onclick="closeMenu()">
                     <div class="flex items-center">
@@ -163,7 +163,7 @@
                         Template
                     </div>
                 </a>
-                <a href="#contact"
+                <a href="javascript:void(0);" onclick="scrollToSection('contact', event)"
                     class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
                     onclick="closeMenu()">
                     <div class="flex items-center">
