@@ -61,11 +61,3 @@ window.addEventListener('resize', function () {
 
 // auto-update tahun copyright
 document.getElementById("year").textContent = new Date().getFullYear();
-
-function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-        history.replaceState(null, null, ' '); // hapus hash dari URL
-    }
-}
