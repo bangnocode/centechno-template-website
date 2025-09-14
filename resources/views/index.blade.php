@@ -54,31 +54,31 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="javascript:void(0);" onclick="scrollToSection('home', event)"
+                    <a onclick="scrollToSection('home', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Beranda
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="javascript:void(0);" onclick="scrollToSection('about', event)"
+                    <a onclick="scrollToSection('about', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Tentang
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="javascript:void(0);" onclick="scrollToSection('services', event)"
+                    <a onclick="scrollToSection('services', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Layanan
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="javascript:void(0);" onclick="scrollToSection('template', event)"
+                    <a onclick="scrollToSection('template', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Template
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="javascript:void(0);" onclick="scrollToSection('contact', event)"
+                    <a onclick="scrollToSection('contact', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Kontak
                         <span
