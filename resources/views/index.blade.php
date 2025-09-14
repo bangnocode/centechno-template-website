@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <!-- SEO Meta Tags -->
     <title>Centechno</title>
-    <meta name="description" content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai. Mulai dari template siap pakai hingga custom sesuai kebutuhan bisnis.">
+    <meta name="description"
+        content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai. Mulai dari template siap pakai hingga custom sesuai kebutuhan bisnis.">
     <meta name="keywords" content="website, jasa pembuatan website, website profesional, template website, centechno">
     <meta name="author" content="Centechno">
 
@@ -18,7 +19,8 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Centechno - Jasa Pembuatan Website Profesional">
-    <meta property="og:description" content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai.">
+    <meta property="og:description"
+        content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ asset('img/logo-ct.png') }}"> <!-- Ganti sesuai image promosi -->
@@ -26,7 +28,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Centechno - Jasa Pembuatan Website Profesional">
-    <meta name="twitter:description" content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai.">
+    <meta name="twitter:description"
+        content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai.">
     <meta name="twitter:image" content="{{ asset('img/logo-ct.png') }}"> <!-- Ganti sesuai image promosi -->
 
     <!-- Styles & Scripts -->
@@ -51,31 +54,31 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home"
+                    <a href="javascript:void(0);" onclick="scrollToSection('home')"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Beranda
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#about"
+                    <a href="javascript:void(0);" onclick="scrollToSection('about')"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Tentang
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#services"
+                    <a href="javascript:void(0);" onclick="scrollToSection('services')"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Layanan
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#template"
+                    <a href="javascript:void(0);" onclick="scrollToSection('template')"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Template
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#contact"
+                    <a href="javascript:void(0);" onclick="scrollToSection('contact')"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Kontak
                         <span
@@ -85,7 +88,7 @@
 
                 <!-- CTA Button Desktop -->
                 <div class="hidden md:block">
-                    <a href="#contact"
+                    <a href="javascript:void(0);" onclick="scrollToSection('contact')"
                         class="inline-flex items-center px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 hover:scale-105 shadow-sm">
                         Konsultasi Gratis
                         <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
@@ -366,7 +369,8 @@
                         <li>• Gratis domain .my.id & hosting 1 Tahun <br> (Domain lain bisa ditanyakan ke admin)</li>
                         <li>• Gratis update konten sesuai usaha</li>
                     </ul>
-                    <p class="mt-6 text-lg font-bold text-primary">Harga fleksibel <br> <span class="text-sm">(Mulai dari Rp189.000)</span></p>
+                    <p class="mt-6 text-lg font-bold text-primary">Harga fleksibel <br> <span class="text-sm">(Mulai
+                            dari Rp189.000)</span></p>
                 </div>
             </div>
         </div>
@@ -384,7 +388,7 @@
             </div>
             <h2 class="text-xl lg:text-2xl font-bold text-gray-900 mb-4">Template Single Page</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                
+
                 <!-- Savana Digital -->
                 <a href="{{ url('/savana-digital') }}" target="_blank"
                     class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
@@ -445,7 +449,7 @@
                 <!-- Aurum Dining -->
                 <a href="{{ url('/aurum-dining') }}" target="_blank"
                     class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
-                    <img src="{{{asset("img/page-aurum-dining.webp")}}}" alt="Aurum Dining"
+                    <img src="{{ asset('img/page-aurum-dining.webp') }}" alt="Aurum Dining"
                         class="w-full h-48 object-cover group-hover:scale-105 transition">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#d4af37] transition">
