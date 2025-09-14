@@ -54,31 +54,31 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="javascript:void(0);" onclick="scrollToSection('home')"
+                    <a href="javascript:void(0);" onclick="scrollToSection('home', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Beranda
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="javascript:void(0);" onclick="scrollToSection('about')"
+                    <a href="javascript:void(0);" onclick="scrollToSection('about', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Tentang
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="javascript:void(0);" onclick="scrollToSection('services')"
+                    <a href="javascript:void(0);" onclick="scrollToSection('services', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Layanan
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="javascript:void(0);" onclick="scrollToSection('template')"
+                    <a href="javascript:void(0);" onclick="scrollToSection('template', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Template
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="javascript:void(0);" onclick="scrollToSection('contact')"
+                    <a href="javascript:void(0);" onclick="scrollToSection('contact', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Kontak
                         <span
@@ -88,7 +88,7 @@
 
                 <!-- CTA Button Desktop -->
                 <div class="hidden md:block">
-                    <a href="javascript:void(0);" onclick="scrollToSection('contact')"
+                    <a href="javascript:void(0);" onclick="scrollToSection('contact', event)"
                         class="inline-flex items-center px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 hover:scale-105 shadow-sm">
                         Konsultasi Gratis
                         <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
@@ -714,13 +714,14 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/index_script.js"></script>
     <script>
-        function scrollToSection(id) {
+        function scrollToSection(id, event) {
+            if (event) event.preventDefault(); // cegah default # muncul
             const section = document.getElementById(id);
             if (section) {
                 section.scrollIntoView({
                     behavior: 'smooth'
                 });
-                history.replaceState(null, null, ' ');
+                history.replaceState(null, null, ' '); // hapus hash dari URL
             }
         }
     </script>
