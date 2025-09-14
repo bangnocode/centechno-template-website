@@ -2,14 +2,39 @@
 <html lang="id">
 
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
-    <title>Centechno - Solusi Teknologi Terdepan</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Centechno</title>
+    <meta name="description" content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai. Mulai dari template siap pakai hingga custom sesuai kebutuhan bisnis.">
+    <meta name="keywords" content="website, jasa pembuatan website, website profesional, template website, centechno">
+    <meta name="author" content="Centechno">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Centechno - Jasa Pembuatan Website Profesional">
+    <meta property="og:description" content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('img/logo-ct.png') }}"> <!-- Ganti sesuai image promosi -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Centechno - Jasa Pembuatan Website Profesional">
+    <meta name="twitter:description" content="Centechno menyediakan layanan pembuatan website modern, profesional, dan siap pakai.">
+    <meta name="twitter:image" content="{{ asset('img/logo-ct.png') }}"> <!-- Ganti sesuai image promosi -->
+
+    <!-- Styles & Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="{{ asset('js/tailwind-config-index.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('style/style_index.css') }}">
 </head>
+
 
 <body class="bg-white">
     <!-- Navigation -->
