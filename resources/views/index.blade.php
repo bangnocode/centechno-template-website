@@ -54,41 +54,41 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a onclick="scrollToSection('home', event)"
+                    <button onclick="scrollToSection('home', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Beranda
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a onclick="scrollToSection('about', event)"
+                    </button>
+                    <button onclick="scrollToSection('about', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Tentang
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a onclick="scrollToSection('services', event)"
+                    </button>
+                    <button onclick="scrollToSection('services', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Layanan
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a onclick="scrollToSection('template', event)"
+                    </button>
+                    <button onclick="scrollToSection('template', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Template
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
-                    <a onclick="scrollToSection('contact', event)"
+                    </button>
+                    <button onclick="scrollToSection('contact', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Kontak
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                    </a>
+                    </button>
                 </div>
 
                 <!-- CTA Button Desktop -->
                 <div class="hidden md:block">
-                    <a href="javascript:void(0);" onclick="scrollToSection('contact', event)"
+                    <button href="javascript:void(0);" onclick="scrollToSection('contact', event)"
                         class="inline-flex items-center px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-all duration-300 hover:scale-105 shadow-sm">
                         Konsultasi Gratis
                         <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
@@ -96,7 +96,7 @@
                                 d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                 clip-rule="evenodd" />
                         </svg>
-                    </a>
+                    </button>
                 </div>
 
                 <!-- Mobile Menu Button -->
