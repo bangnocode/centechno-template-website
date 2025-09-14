@@ -666,7 +666,7 @@
             <div class="border-t border-slate-700/50 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-slate-400 text-sm">
-                        © <span id="year">2024</span> Centechno. All rights
+                        © <span id="year">2024</span> Centechno. Jasa Pembuatan Website & Template. All rights
                         reserved.
                     </p>
                     <div class="flex space-x-6 mt-4 md:mt-0">
