@@ -7,51 +7,8 @@
     <link rel="icon" href="favicon.ico">
     <title>Centechno - Solusi Teknologi Terdepan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2563eb',
-                        secondary: '#1e40af'
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate-fade-in {
-            animation: fade-in 0.2s ease-out;
-        }
-
-        /* Smooth scrolling for anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Backdrop blur support for older browsers */
-        @supports not (backdrop-filter: blur(12px)) {
-            nav {
-                background-color: rgba(255, 255, 255, 0.95);
-            }
-
-            #mobile-menu {
-                background-color: rgba(255, 255, 255, 0.95);
-            }
-        }
-    </style>
+    <script src="{{ asset('js/tailwind-config-index.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('style/style_index.css') }}">
 </head>
 
 <body class="bg-white">
@@ -87,9 +44,9 @@
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
-                    <a href="#testimonials"
+                    <a href="#template"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
-                        Testimoni
+                        Template
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
@@ -167,7 +124,7 @@
                         Layanan
                     </div>
                 </a>
-                <a href="#testimonials"
+                <a href="#template"
                     class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
                     onclick="closeMenu()">
                     <div class="flex items-center">
@@ -175,7 +132,7 @@
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
-                        Testimoni
+                        Template
                     </div>
                 </a>
                 <a href="#contact"
@@ -392,7 +349,7 @@
 
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-white">
+    <section id="template" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Template Website</h2>
@@ -726,72 +683,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        function contactWarning() {
-            Swal.fire({
-                title: "Maaf",
-                text: "Contact Masih Belum Tersedia",
-                icon: "warning"
-            });
-        }
-
-        function toggleMenu() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-
-            if (mobileMenu.classList.contains('hidden')) {
-                // Open menu
-                mobileMenu.classList.remove('hidden');
-                mobileMenu.classList.add('animate-fade-in');
-                menuIcon.classList.add('hidden');
-                closeIcon.classList.remove('hidden');
-                document.body.style.overflow = 'hidden'; // Prevent background scroll
-            } else {
-                // Close menu
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('animate-fade-in');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-                document.body.style.overflow = 'auto'; // Re-enable background scroll
-            }
-        }
-
-        function closeMenu() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuIcon = document.getElementById('menu-icon');
-            const closeIcon = document.getElementById('close-icon');
-
-            mobileMenu.classList.add('hidden');
-            mobileMenu.classList.remove('animate-fade-in');
-            menuIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const mobileMenu = document.getElementById('mobile-menu');
-            const menuButton = document.getElementById('mobile-menu-button');
-
-            if (!mobileMenu.contains(event.target) && !menuButton.contains(event.target)) {
-                if (!mobileMenu.classList.contains('hidden')) {
-                    closeMenu();
-                }
-            }
-        });
-
-        // Close mobile menu on window resize (when switching to desktop view)
-        window.addEventListener('resize', function() {
-            if (window.innerWidth >= 768) { // md breakpoint
-                closeMenu();
-            }
-        });
-
-        // auto-update tahun copyright
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-
+    <script src="{{ asset('js/index_script.js') }}"></script>
 </body>
 
 </html>
