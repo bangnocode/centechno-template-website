@@ -713,17 +713,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/index_script.js"></script>
-    <script>
-        function scrollToSection(id) {
-            const section = document.getElementById(id);
-            if (section) {
-                section.scrollIntoView({
-                    behavior: 'smooth'
-                });
-                history.replaceState(null, null, ' '); // hapus hash dari URL
-            }
-        }
-    </script>
 </body>
 
 </html>
