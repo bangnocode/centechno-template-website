@@ -34,8 +34,8 @@
 
     <!-- Styles & Scripts -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="{{ asset('js/tailwind-config-index.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('style/style_index.css') }}">
+    <script src="js/tailwind-config-index.js"></script>
+    <link rel="stylesheet" href="style/style_index.css">
 </head>
 
 
@@ -712,7 +712,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="{{ asset('js/index_script.js') }}"></script>
+    <script src="js/index_script.js"></script>
     <script>
         function scrollToSection(id) {
             const section = document.getElementById(id);
