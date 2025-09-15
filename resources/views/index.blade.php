@@ -792,6 +792,58 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="js/index_script.js"></script>
+    <script>
+        function scrollToSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                history.replaceState(null, null, ' ');
+            }
+        }
+
+        $(document).ready(function() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $('#form_survei').submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    url: "/survei",
+                    type: "POST",
+                    data: $(this).serialize(),
+                    dataType: "json",
+
+                    // 🔹 Tampilkan loading sebelum request dikirim
+                    beforeSend: function() {
+                        Swal.fire({
+                            title: 'Mengirim data...',
+                            text: 'Mohon tunggu sebentar',
+                            allowOutsideClick: false,
+                            didOpen: () => {
+                                Swal.showLoading();
+                            }
+                        });
+                    },
+
+                    success: function() {
+                        Swal.fire("Berhasil!", "Data ditambahkan", "success");
+                        $('#form_survei')[0].reset();
+                    },
+
+                    error: function(xhr) {
+                        Swal.fire("Gagal!", "Terjadi Kesalahan", "error");
+                        console.log("Error:", xhr.status, xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
