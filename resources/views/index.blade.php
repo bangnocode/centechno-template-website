@@ -172,10 +172,14 @@
                     </div>
                 </a>
                 <a href="javascript:void(0);" onclick="scrollToSection('survei', event)"
-                    class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
-                    Survei
-                    <span
-                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                    class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 mr-3 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M4 3a1 1 0 011-1h10a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V3zm2 2v2h8V5H6zm0 4v2h8V9H6zm0 4v2h5v-2H6z" />
+                        </svg>
+                        Survei
+                    </div>
                 </a>
                 <a href="javascript:void(0);" onclick="scrollToSection('contact', event)"
                     class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
@@ -832,7 +836,8 @@
                     },
 
                     success: function() {
-                        Swal.fire("Survei Berhasil Dikirim!", "Terima Kasih Sudah Mengisi Survei!", "success");
+                        Swal.fire("Survei Berhasil Dikirim!",
+                            "Terima Kasih Sudah Mengisi Survei!", "success");
                         $('#form_survei')[0].reset();
                     },
 
