@@ -36,6 +36,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind-config-index.js"></script>
     <link rel="stylesheet" href="style/style_index.css">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 
@@ -75,6 +77,12 @@
                     <a href="javascript:void(0);" onclick="scrollToSection('template', event)"
                         class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
                         Template
+                        <span
+                            class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="javascript:void(0);" onclick="scrollToSection('survei', event)"
+                        class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
+                        Survei
                         <span
                             class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                     </a>
@@ -162,6 +170,12 @@
                         </svg>
                         Template
                     </div>
+                </a>
+                <a href="javascript:void(0);" onclick="scrollToSection('survei', event)"
+                    class="text-slate-700 hover:text-blue-600 transition-colors duration-300 font-medium relative group">
+                    Survei
+                    <span
+                        class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="javascript:void(0);" onclick="scrollToSection('contact', event)"
                     class="block px-4 py-3 text-slate-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all duration-200 font-medium"
@@ -463,8 +477,72 @@
         </div>
     </section>
 
+    <!-- Survei Section -->
+    <section id="survei" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                    Survei Pengunjung
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Kami menghargai setiap masukan Anda. Silakan isi formulir berikut agar kami dapat memahami kebutuhan
+                    dan minat pengunjung dengan lebih baik.
+                </p>
+            </div>
+
+            <!-- Formulir Survei -->
+            <div class="max-w-2xl mx-auto">
+                <form class="bg-white rounded-lg shadow-lg p-8" id="form_survei">
+                    @csrf
+
+                    <!-- Nama -->
+                    <div class="mb-6">
+                        <label for="nama" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Nama <span class="text-red-500">*</span>
+                        </label>
+                        <input type="text" id="nama" name="nama" required maxlength="100"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                            placeholder="Masukkan nama lengkap Anda">
+                    </div>
+
+                    <!-- Nomor Telepon -->
+                    <div class="mb-6">
+                        <label for="telepon" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Nomor Telepon <span class="text-red-500">*</span>
+                        </label>
+                        <input type="tel" id="telepon" name="nomor_telepon" required maxlength="15"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                            placeholder="Contoh: 08123456789" pattern="[0-9+\-\s\(\)]+">
+                    </div>
+
+                    <!-- Website Seperti Apa Yang Anda Sukai -->
+                    <div class="mb-8">
+                        <label for="website_preference" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Website Seperti Apa Yang Anda Sukai? <span class="text-red-500">*</span>
+                        </label>
+                        <textarea id="website_preference" name="deskripsi_web" required rows="5"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 resize-vertical"
+                            placeholder="Ceritakan preferensi Anda tentang desain website, fitur yang diinginkan, warna, layout, atau hal lain yang Anda sukai dari sebuah website..."></textarea>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Contoh: Website dengan desain minimalis, warna soft, mudah navigasi, loading cepat, dll.
+                        </p>
+                    </div>
+
+                    <!-- Tombol Kirim -->
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            Kirim Survei
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
+    <section id="contact" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -711,6 +789,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/index_script.js"></script>
     <script>

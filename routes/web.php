@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\SurveiController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
 });
 
+Route::post('/survei', [SurveiController::class, 'store'])->name('survei.store');
+Route::put('/survei/{id}', [SurveiController::class, 'update'])->name('survei.update');
 
 // MULTIPAGE
 Route::get('/aurum-dining', function () {
