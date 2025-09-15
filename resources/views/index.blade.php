@@ -822,7 +822,7 @@
                     // 🔹 Tampilkan loading sebelum request dikirim
                     beforeSend: function() {
                         Swal.fire({
-                            title: 'Mengirim data...',
+                            title: 'Mengirim survei...',
                             text: 'Mohon tunggu sebentar',
                             allowOutsideClick: false,
                             didOpen: () => {
@@ -832,7 +832,7 @@
                     },
 
                     success: function() {
-                        Swal.fire("Berhasil!", "Data ditambahkan", "success");
+                        Swal.fire("Survei Berhasil Dikirim!", "Terima Kasih Sudah Mengisi Survei!", "success");
                         $('#form_survei')[0].reset();
                     },
 
