@@ -6,6 +6,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/product', function () {
     return response()->json([
         'status' => 'success',
-        'data' => 'opo ae bi bi',
+        'data' => 'test response api hosting',
     ], 200);
 });
