@@ -88,122 +88,24 @@
         <!-- Menu Grid -->
         <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <!-- Item -->
-            <div
-                class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
-                <img src="https://images.unsplash.com/photo-1600891964093-3cde3e2d8b7e?auto=format&fit=crop&w=800&q=80"
-                    alt="Steak" class="w-full h-60 object-cover rounded-t-2xl" />
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2">Wagyu Tenderloin</h3>
-                    <p class="text-gray-400 text-sm mb-4">Steak premium dengan kualitas terbaik, disajikan dengan saus
-                        spesial.</p>
-                    <span class="text-[#d4af37] font-bold text-lg">Rp 850.000</span>
+            @foreach ($menu_aurum_dining as $menu)
+                <div
+                    class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
+                    <img src="{{ asset($menu->asset) }}" alt="{{ $menu->nama_menu }}"
+                        class="w-full h-60 object-cover rounded-t-2xl" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-white mb-2">{{ $menu->nama_menu }}</h3>
+                        <p class="text-gray-400 text-sm mb-4">{{ $menu->deskripsi_menu }}</p>
+                        <span class="text-[#d4af37] font-bold text-lg">Rp {{ number_format($menu->harga, 0, ',', '.') }}</span>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Item -->
-            <div
-                class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
-                <img src="https://images.unsplash.com/photo-1625944195306-7d9f99b91a48?auto=format&fit=crop&w=800&q=80"
-                    alt="Pasta" class="w-full h-60 object-cover rounded-t-2xl" />
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2">Truffle Pasta</h3>
-                    <p class="text-gray-400 text-sm mb-4">Pasta buatan tangan dengan aroma truffle dan taburan parmesan.
-                    </p>
-                    <span class="text-[#d4af37] font-bold text-lg">Rp 450.000</span>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div
-                class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
-                <img src="https://images.unsplash.com/photo-1617196034846-9f1f4c857c3e?auto=format&fit=crop&w=800&q=80"
-                    alt="Dessert" class="w-full h-60 object-cover rounded-t-2xl" />
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2">Gold Chocolate Soufflé</h3>
-                    <p class="text-gray-400 text-sm mb-4">Soufflé cokelat mewah dengan sentuhan edible gold di atasnya.
-                    </p>
-                    <span class="text-[#d4af37] font-bold text-lg">Rp 300.000</span>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div
-                class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
-                <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80"
-                    alt="Wine" class="w-full h-60 object-cover rounded-t-2xl" />
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2">Red Wine Reserve</h3>
-                    <p class="text-gray-400 text-sm mb-4">Pilihan wine terbaik dari koleksi eksklusif AURUM.</p>
-                    <span class="text-[#d4af37] font-bold text-lg">Rp 1.200.000</span>
-                </div>
-            </div>
-            <div
-                class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
-                <img src="https://images.unsplash.com/photo-1600891964093-3cde3e2d8b7e?auto=format&fit=crop&w=800&q=80"
-                    alt="Steak" class="w-full h-60 object-cover rounded-t-2xl" />
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2">Wagyu Tenderloin</h3>
-                    <p class="text-gray-400 text-sm mb-4">Steak premium dengan kualitas terbaik, disajikan dengan saus
-                        spesial.</p>
-                    <span class="text-[#d4af37] font-bold text-lg">Rp 850.000</span>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div
-                class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
-                <img src="https://images.unsplash.com/photo-1625944195306-7d9f99b91a48?auto=format&fit=crop&w=800&q=80"
-                    alt="Pasta" class="w-full h-60 object-cover rounded-t-2xl" />
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2">Truffle Pasta</h3>
-                    <p class="text-gray-400 text-sm mb-4">Pasta buatan tangan dengan aroma truffle dan taburan parmesan.
-                    </p>
-                    <span class="text-[#d4af37] font-bold text-lg">Rp 450.000</span>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div
-                class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
-                <img src="https://images.unsplash.com/photo-1617196034846-9f1f4c857c3e?auto=format&fit=crop&w=800&q=80"
-                    alt="Dessert" class="w-full h-60 object-cover rounded-t-2xl" />
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2">Gold Chocolate Soufflé</h3>
-                    <p class="text-gray-400 text-sm mb-4">Soufflé cokelat mewah dengan sentuhan edible gold di atasnya.
-                    </p>
-                    <span class="text-[#d4af37] font-bold text-lg">Rp 300.000</span>
-                </div>
-            </div>
-
-            <!-- Item -->
-            <div
-                class="bg-black/40 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition transform duration-500">
-                <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80"
-                    alt="Wine" class="w-full h-60 object-cover rounded-t-2xl" />
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-white mb-2">Red Wine Reserve</h3>
-                    <p class="text-gray-400 text-sm mb-4">Pilihan wine terbaik dari koleksi eksklusif AURUM.</p>
-                    <span class="text-[#d4af37] font-bold text-lg">Rp 1.200.000</span>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 
 
     <!-- Footer -->
-    <footer class="bg-black text-gray-400 py-12 text-center px-6">
-        <div class="mb-4">
-            <span class="text-2xl font-luxury text-[#d4af37]">AURUM</span>
-        </div>
-        <p class="mb-2">Jl. Kemewahan No. 88, Jakarta</p>
-        <p class="mb-4">✉️ contact@aurumdining.com | 📞 0812-8888-8888</p>
-        <div class="flex justify-center space-x-6 text-[#d4af37] text-xl">
-            <a href="#">🌐</a>
-            <a href="#">📷</a>
-            <a href="#">🐦</a>
-        </div>
-        <p class="mt-6 text-sm text-gray-600">&copy; 2025 Aurum Dining. All rights reserved.</p>
-    </footer>
+    <x-footer_aurum_dining></x-footer_aurum_dining>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script></script>

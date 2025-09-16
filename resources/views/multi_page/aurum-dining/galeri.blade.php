@@ -46,109 +46,89 @@
             <!-- Menu -->
             <div class="hidden w-full md:flex md:w-auto" id="navbar-menu">
                 <ul
-    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-black/90 
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-black/90 
            md:space-x-10 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
 
-    <li><a href="{{ url('/aurum-dining') }}"
-           class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Home</a></li>
+                    <li><a href="{{ url('/aurum-dining') }}"
+                            class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Home</a></li>
 
-    <li><a href="{{ url('/aurum-dining/menu') }}"
-           class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Menu</a></li>
+                    <li><a href="{{ url('/aurum-dining/menu') }}"
+                            class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Menu</a></li>
 
-    <li><a href="{{ url('/aurum-dining#about') }}"
-           class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Tentang</a></li>
+                    <li><a href="{{ url('/aurum-dining#about') }}"
+                            class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Tentang</a></li>
 
-    <li><a href="{{ url('/aurum-dining/galeri') }}"
-           class="block py-2 px-3 rounded text-[#d4af37] transition">Galeri</a></li>
+                    <li><a href="{{ url('/aurum-dining/galeri') }}"
+                            class="block py-2 px-3 rounded text-[#d4af37] transition">Galeri</a></li>
 
-    <li>
-        <a href="{{ url('/aurum-dining#reservasi') }}"
-           class="block py-2 px-4 bg-[#d4af37] text-black font-semibold rounded-full hover:bg-yellow-500 transition">
-            Reservasi
-        </a>
-    </li>
-</ul>
+                    <li>
+                        <a href="{{ url('/aurum-dining#reservasi') }}"
+                            class="block py-2 px-4 bg-[#d4af37] text-black font-semibold rounded-full hover:bg-yellow-500 transition">
+                            Reservasi
+                        </a>
+                    </li>
+                </ul>
 
             </div>
         </div>
     </nav>
 
     <section id="gallery" class="py-36 px-6 max-w-7xl mx-auto">
-  <!-- Heading -->
-  <div class="text-center mb-16">
-    <h2 class="text-4xl md:text-5xl font-serif font-bold tracking-wide text-white">
-      <span class="text-[#d4af37]">Galeri</span> Aurum Dining
-    </h2>
-    <div class="w-24 h-[3px] bg-[#d4af37] mx-auto mt-4"></div>
-    <p class="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
-      Momen indah, hidangan premium, dan suasana eksklusif yang tercipta di Aurum Dining.
-    </p>
-  </div>
+        <!-- Heading -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold tracking-wide text-white">
+                <span class="text-[#d4af37]">Galeri</span> Aurum Dining
+            </h2>
+            <div class="w-24 h-[3px] bg-[#d4af37] mx-auto mt-4"></div>
+            <p class="mt-6 text-gray-400 text-lg max-w-2xl mx-auto">
+                Momen indah, hidangan premium, dan suasana eksklusif yang tercipta di Aurum Dining.
+            </p>
+        </div>
 
-  <!-- Gallery Grid -->
-  <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-    <!-- Item -->
-    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
-      <img src="https://images.unsplash.com/photo-1600891963930-96053b4dcf28?auto=format&fit=crop&w=900&q=80" 
-           alt="Fine Dining" 
-           class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
-      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <span class="text-white font-semibold text-lg tracking-wide">Fine Dining</span>
-      </div>
-    </div>
+        <!-- Gallery Grid -->
+        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <!-- Item -->
+            @foreach ($menu_aurum_dining as $menu)
+                <!-- Item -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                    <img src="{{ asset($menu->asset) }}" alt="{{ $menu->nama_menu }}"
+                        class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-semibold text-lg tracking-wide">{{ $menu->nama_menu }}</span>
+                    </div>
+                </div>
+            @endforeach
 
-    <!-- Item -->
-    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
-      <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=900&q=80" 
-           alt="Wine Collection" 
-           class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
-      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <span class="text-white font-semibold text-lg tracking-wide">Wine Collection</span>
-      </div>
-    </div>
+            <!-- Item -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80"
+                    alt="Signature Dish"
+                    class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                    <span class="text-white font-semibold text-lg tracking-wide">Signature Dish</span>
+                </div>
+            </div>
 
-    <!-- Item -->
-    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" 
-           alt="Signature Dish" 
-           class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
-      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <span class="text-white font-semibold text-lg tracking-wide">Signature Dish</span>
-      </div>
-    </div>
-
-    <!-- Item -->
-    <div class="relative group overflow-hidden rounded-2xl shadow-lg">
-      <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80" 
-           alt="Ambience" 
-           class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
-      <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-        <span class="text-white font-semibold text-lg tracking-wide">Ambience</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+            <!-- Item -->
+            <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80"
+                    alt="Ambience"
+                    class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                    <span class="text-white font-semibold text-lg tracking-wide">Ambience</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-gray-400 py-12 text-center px-6">
-        <div class="mb-4">
-            <span class="text-2xl font-luxury text-[#d4af37]">AURUM</span>
-        </div>
-        <p class="mb-2">Jl. Kemewahan No. 88, Jakarta</p>
-        <p class="mb-4">✉️ contact@aurumdining.com | 📞 0812-8888-8888</p>
-        <div class="flex justify-center space-x-6 text-[#d4af37] text-xl">
-            <a href="#">🌐</a>
-            <a href="#">📷</a>
-            <a href="#">🐦</a>
-        </div>
-        <p class="mt-6 text-sm text-gray-600">&copy; 2025 Aurum Dining. All rights reserved.</p>
-    </footer>
+    <x-footer_aurum_dining></x-footer_aurum_dining>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script>
-    </script>
+    <script></script>
 </body>
 
 </html>

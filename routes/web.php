@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\SurveiController;
+use App\Models\MenuAurumDining;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -12,13 +13,16 @@ Route::put('/survei/{id}', [SurveiController::class, 'update'])->name('survei.up
 
 // MULTIPAGE
 Route::get('/aurum-dining', function () {
-    return view('multi_page.aurum-dining.aurum-dining');
+    $menu_aurum_dining = MenuAurumDining::latest()->take(3)->get();
+    return view('multi_page.aurum-dining.aurum-dining', compact('menu_aurum_dining'));
 });
 Route::get('/aurum-dining/menu', function () {
-    return view('multi_page.aurum-dining.menu');
+    $menu_aurum_dining = MenuAurumDining::all();
+    return view('multi_page.aurum-dining.menu', compact('menu_aurum_dining'));
 });
 Route::get('/aurum-dining/galeri', function () {
-    return view('multi_page.aurum-dining.galeri');
+    $menu_aurum_dining = MenuAurumDining::all();
+    return view('multi_page.aurum-dining.galeri', compact('menu_aurum_dining'));
 });
 
 // SINGLE PAGE
