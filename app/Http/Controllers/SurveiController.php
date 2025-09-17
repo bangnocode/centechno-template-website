@@ -12,7 +12,12 @@ class SurveiController extends Controller
      */
     public function index()
     {
-        //
+        $data = SurveiModel::all();
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Data Survei Berhasil Didapat',
+            'data' => $data
+        ], 200);
     }
 
     /**

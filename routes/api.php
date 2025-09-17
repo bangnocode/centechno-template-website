@@ -1,11 +1,7 @@
 <?php
 
+use App\Http\Controllers\SurveiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/test', function () {
-    return response()->json([
-        'status' => 'success',
-        'data' => 'test response api hosting',
-    ], 200);
-});
+Route::get('/survei', [SurveiController::class, 'index']);
