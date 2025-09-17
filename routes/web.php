@@ -8,7 +8,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/survei', [SurveiController::class, 'store'])->name('survei.store')->middleware(['guest', 'throttle:5,1']);
+Route::post('/survei', [SurveiController::class, 'store'])->name('survei.store')->middleware(['guest', 'throttle:3,1']);
 
 // MULTIPAGE
 Route::get('/aurum-dining', function () {
