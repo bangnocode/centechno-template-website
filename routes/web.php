@@ -25,6 +25,25 @@ Route::get('/aurum-dining/galeri', function () {
     return view('multi_page.aurum-dining.galeri', compact('menu_aurum_dining'));
 });
 
+Route::get('/da-esemkasa', function () {
+    return view('multi_page.da-esemkasa.index');
+});
+Route::get('/da-esemkasa/kegiatan', function () {
+    return view('multi_page.da-esemkasa.kegiatan');
+});
+Route::get('/da-esemkasa/berita', function () {
+    return view('multi_page.da-esemkasa.berita');
+});
+Route::get('/da-esemkasa/galeri', function () {
+    return view('multi_page.da-esemkasa.galeri');
+});
+Route::get('/da-esemkasa/berita/open-recruitmen-da-2025', function () {
+    return view('multi_page.da-esemkasa.berita.open_recruitment_da_2025');
+});
+Route::get('/da-esemkasa/berita/PTA2025', function () {
+    return view('multi_page.da-esemkasa.berita.PTA2025');
+});
+
 // SINGLE PAGE
 Route::get('/savana-digital', function () {
     return view('single_page.savana-digital');

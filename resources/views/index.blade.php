@@ -309,7 +309,6 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Paket Website 1 Page -->
-                <!-- Paket Website 1 Page -->
                 <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all">
                     <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
                         <!-- Icon Document -->
@@ -470,6 +469,19 @@
                             Aurum Dining
                         </h3>
                         <p class="text-gray-600">Template website restoran elegan dengan menu & galeri.</p>
+                    </div>
+                </a>
+
+                <!-- Dewan Ambalan Esemkasa -->
+                <a href="{{ url('/da-esemkasa') }}" target="_blank"
+                    class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
+                    <img src="{{ asset('img/page-da-esemkasa.png') }}" alt="Aurum Dining"
+                        class="w-full h-48 object-cover group-hover:scale-105 transition">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#d4af37] transition">
+                            Dewan Ambalan Esemkasa
+                        </h3>
+                        <p class="text-gray-600">Template website organisasi dengan Beranda, Kegiatan, Galeri, Berita</p>
                     </div>
                 </a>
 
