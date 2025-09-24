@@ -15,7 +15,7 @@
     <meta name="author" content="Centechno">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/logo-ct.png') }}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Centechno - Jasa Pembuatan Website Profesional">
