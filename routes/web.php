@@ -15,29 +15,40 @@ Route::middleware(['throttle:batas_spam'])->group(function () {
 
     // homepage
     Route::get('/', function () {
-        return Cache::remember('home_page', 300, fn() => view('index'));
+        // cache data saja, bukan view
+        $data = Cache::remember('home_page_data', 300, function () {
+            // jika homepage punya data lain, ambil di sini
+            return [
+                'title' => 'Homepage',
+            ];
+        });
+
+        return view('index', $data);
     });
 
     // Aurum Dining
     Route::get('/aurum-dining', function () {
-        return Cache::remember('menu_aurum_dining_home', 300, function () {
-            $menu_aurum_dining = MenuAurumDining::latest()->take(3)->get();
-            return view('multi_page.aurum-dining.aurum-dining', compact('menu_aurum_dining'));
+        $menu_aurum_dining = Cache::remember('menu_aurum_dining_home', 300, function () {
+            return MenuAurumDining::latest()->take(3)->get();
         });
+
+        return view('multi_page.aurum-dining.aurum-dining', compact('menu_aurum_dining'));
     });
 
     Route::get('/aurum-dining/menu', function () {
-        return Cache::remember('menu_aurum_dining_all', 300, function () {
-            $menu_aurum_dining = MenuAurumDining::all();
-            return view('multi_page.aurum-dining.menu', compact('menu_aurum_dining'));
+        $menu_aurum_dining = Cache::remember('menu_aurum_dining_all', 300, function () {
+            return MenuAurumDining::all();
         });
+
+        return view('multi_page.aurum-dining.menu', compact('menu_aurum_dining'));
     });
 
     Route::get('/aurum-dining/galeri', function () {
-        return Cache::remember('menu_aurum_dining_galeri', 300, function () {
-            $menu_aurum_dining = MenuAurumDining::all();
-            return view('multi_page.aurum-dining.galeri', compact('menu_aurum_dining'));
+        $menu_aurum_dining = Cache::remember('menu_aurum_dining_galeri', 300, function () {
+            return MenuAurumDining::all();
         });
+
+        return view('multi_page.aurum-dining.galeri', compact('menu_aurum_dining'));
     });
 
     // DA-Essemkasa
