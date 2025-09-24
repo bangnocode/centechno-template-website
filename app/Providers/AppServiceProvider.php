@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // Batasi 10 request per 10 menit per IP
         RateLimiter::for('batas_spam', function (Request $request) {
-            return Limit::perMinutes(10, 10)->by($request->ip());
+            return Limit::perMinute(5)->by($request->ip());
         });
     }
 }

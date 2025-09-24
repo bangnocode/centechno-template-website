@@ -19,3 +19,22 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    # HTML: cache 5 menit
+    ExpiresByType text/html "access plus 5 minutes"
+    # CSS & JS: cache 1 jam
+    ExpiresByType text/css "access plus 1 hour"
+    ExpiresByType application/javascript "access plus 1 hour"
+    # Images: cache 1 hari
+    ExpiresByType image/jpeg "access plus 1 day"
+    ExpiresByType image/png "access plus 1 day"
+    ExpiresByType image/gif "access plus 1 day"
+    ExpiresByType image/webp "access plus 1 day"
+</IfModule>
+
+<Files 403.shtml>
+    Order allow,deny
+    Allow from all
+</Files>
