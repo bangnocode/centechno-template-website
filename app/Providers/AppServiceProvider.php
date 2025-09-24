@@ -20,9 +20,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         RateLimiter::for('batas_spam', function (Request $request) {
-            return Limit::perMinute(5)->by(
-                $request->user()?->id ?: $request->ip()
-            );
+            // contoh lebih ketat: 10 request per 10 menit per IP
+            return Limit::perMinutes(10, 10)->by($request->ip());
         });
     }
 }
