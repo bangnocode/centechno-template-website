@@ -11,7 +11,7 @@ Route::post('/survei', [SurveiController::class, 'store'])
     ->middleware(['guest', 'throttle:3,1']);
 
 // Semua GET di-throttle + cache
-Route::middleware(['throttle:25,1', 'cache.response'])->group(function () {
+Route::middleware(['throttle:batas_spam', 'cache.response'])->group(function () {
     Route::get('/', fn() => view('index'));
 
     // MULTIPAGE
