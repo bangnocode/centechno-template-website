@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurum Dining</title>
+    <title>Centechno</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <style>
@@ -29,7 +29,7 @@
 
             <!-- Logo -->
             <a href="#" class="flex items-center">
-                <span class="self-center text-2xl font-serif font-bold tracking-wider text-[#d4af37]">AURUM</span>
+                <span class="self-center text-2xl font-serif font-bold tracking-wider text-[#d4af37]">CENTECHNO</span>
             </a>
 
             <!-- Mobile Toggle -->
@@ -49,20 +49,20 @@
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-black/90 
            md:space-x-10 md:flex-row md:mt-0 md:border-0 md:bg-transparent">
 
-                    <li><a href="{{ url('/aurum-dining') }}"
+                    <li><a href="{{ url('/template-ct/mp/1') }}"
                             class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Home</a></li>
 
-                    <li><a href="{{ url('/aurum-dining/menu') }}"
+                    <li><a href="{{ url('/template-ct/mp/1/menu') }}"
                             class="block py-2 px-3 rounded text-[#d4af37] transition">Menu</a></li>
 
-                    <li><a href="{{ url('/aurum-dining#about') }}"
+                    <li><a href="{{ url('/template-ct/mp/1#about') }}"
                             class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Tentang</a></li>
 
-                    <li><a href="{{ url('/aurum-dining/galeri') }}"
+                    <li><a href="{{ url('/template-ct/mp/1/galeri') }}"
                             class="block py-2 px-3 text-white rounded hover:text-[#d4af37] transition">Galeri</a></li>
 
                     <li>
-                        <a href="{{ url('/aurum-dining#reservasi') }}"
+                        <a href="{{ url('/template-ct/mp/1#reservasi') }}"
                             class="block py-2 px-4 bg-[#d4af37] text-black font-semibold rounded-full hover:bg-yellow-500 transition">
                             Reservasi
                         </a>

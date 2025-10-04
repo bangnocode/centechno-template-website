@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NOIR ATELIER — Fashion Premium</title>
+    <title>Centechno</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script>
@@ -56,7 +56,7 @@
     <nav
         class="fixed inset-x-0 top-0 z-50 bg-white/70 dark:bg-gray-900/50 backdrop-blur-xl border-b border-gray-200/60 dark:border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="#home" class="text-2xl tracking-widest font-extrabold">NOIR ATELIER</a>
+            <a href="#home" class="text-2xl tracking-widest font-extrabold">CENTECHNO</a>
             <div class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wide">
                 <a href="#keunggulan" class="hover:opacity-80">Keunggulan</a>
                 <a href="#produk" class="hover:opacity-80">Produk</a>
@@ -84,7 +84,7 @@
                     <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1]">Sculpted <span
                             class="text-gray-400">Silhouettes</span><br />Modern <span
                             class="text-gray-400">Elegance</span></h1>
-                    <p class="mt-6 text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-xl">NOIR ATELIER
+                    <p class="mt-6 text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-xl">CENTECHNO
                         menghadirkan koleksi premium yang memadukan craftsmanship tinggi, garis minimalis, dan estetika
                         editorial yang abadi.</p>
                     <div class="mt-8 flex flex-wrap gap-3">
@@ -108,7 +108,7 @@
         <div class="max-w-7xl mx-auto px-6">
 
             <div class="flex items-end justify-between mb-10">
-                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Mengapa Memilih NOIR ATELIER?</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Mengapa Memilih CENTECHNO</h2>
                 <span class="text-sm text-gray-500 dark:text-gray-400">Geser →</span>
             </div>
 
@@ -267,7 +267,7 @@
                             <p class="text-sm text-gray-500 dark:text-gray-400">Jakarta</p>
                         </div>
                     </div>
-                    <blockquote class="text-gray-700 dark:text-gray-300 italic leading-relaxed">“NOIR ATELIER
+                    <blockquote class="text-gray-700 dark:text-gray-300 italic leading-relaxed">“CENTECHNO
                         menyatukan kemewahan dan kenyamanan yang jarang saya temukan. Setiap potongan terasa istimewa.”
                     </blockquote>
                 </article>
@@ -313,7 +313,7 @@
             <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight">Elevate Your Wardrobe</h2>
             <p class="mt-4 text-lg text-gray-200">Konsultasikan kebutuhan styling Anda dengan fashion advisor kami.</p>
             <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <a href="mailto:contact@noiratelier.com"
+                <a href="mailto:contact@centechno.com"
                     class="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-100">Hubungi Kami</a>
                 <a href="#produk" class="px-8 py-3 rounded-full border border-white/70 hover:bg-white/10">Lihat
                     Produk</a>
@@ -325,7 +325,7 @@
     <footer class="bg-black text-gray-400">
         <div class="max-w-7xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-4">
             <div>
-                <h3 class="text-white font-semibold mb-3 tracking-wider">NOIR ATELIER</h3>
+                <h3 class="text-white font-semibold mb-3 tracking-wider">CENTECHNO</h3>
                 <p class="text-sm">Estetika editorial, konstruksi presisi, dan material premium.</p>
             </div>
             <div>
@@ -340,7 +340,7 @@
             <div>
                 <h4 class="text-white font-semibold mb-3">Kontak</h4>
                 <ul class="space-y-2 text-sm">
-                    <li>Email: contact@noiratelier.com</li>
+                    <li>Email: contact@centechno.com</li>
                     <li>Telp: +62 812 3456 7890</li>
                     <li>Jakarta, Indonesia</li>
                 </ul>
@@ -355,7 +355,7 @@
             </div>
         </div>
         <div class="border-t border-white/10">
-            <p class="max-w-7xl mx-auto px-6 py-6 text-xs tracking-wide text-center">© 2025 NOIR ATELIER. All rights
+            <p class="max-w-7xl mx-auto px-6 py-6 text-xs tracking-wide text-center">© 2025 CENTECHNO. All rights
                 reserved.</p>
         </div>
     </footer>

@@ -27,7 +27,7 @@ Route::middleware(['throttle:batas_spam', 'cache.response:300'])->group(function
     });
 
     // Aurum Dining
-    Route::get('/aurum-dining', function () {
+    Route::get('/template-ct/mp/1', function () {
         $menu_aurum_dining = Cache::remember('menu_aurum_dining_home', 300, function () {
             return MenuAurumDining::latest()->take(3)->get();
         });
@@ -35,7 +35,7 @@ Route::middleware(['throttle:batas_spam', 'cache.response:300'])->group(function
         return view('multi_page.aurum-dining.aurum-dining', compact('menu_aurum_dining'));
     });
 
-    Route::get('/aurum-dining/menu', function () {
+    Route::get('/template-ct/mp/1/menu', function () {
         $menu_aurum_dining = Cache::remember('menu_aurum_dining_all', 300, function () {
             return MenuAurumDining::all();
         });
@@ -43,7 +43,7 @@ Route::middleware(['throttle:batas_spam', 'cache.response:300'])->group(function
         return view('multi_page.aurum-dining.menu', compact('menu_aurum_dining'));
     });
 
-    Route::get('/aurum-dining/galeri', function () {
+    Route::get('/template-ct/mp/1/galeri', function () {
         $menu_aurum_dining = Cache::remember('menu_aurum_dining_galeri', 300, function () {
             return MenuAurumDining::all();
         });
@@ -60,8 +60,8 @@ Route::middleware(['throttle:batas_spam', 'cache.response:300'])->group(function
     Route::get('/da-esemkasa/berita/PTA2025', fn() => view('multi_page.da-esemkasa.berita.PTA2025'));
 
     // Single Pages
-    Route::get('/savana-digital', fn() => view('single_page.savana-digital'));
-    Route::get('/usaha-kami', fn() => view('single_page.usaha-kami'));
-    Route::get('/noir-atelier', fn() => view('single_page.noir-atelier'));
-    Route::get('/bengkel-sejahtera', fn() => view('single_page.bengkel-sejahtera'));
+    Route::get('/template-ct/sp/1', fn() => view('single_page.savana-digital'));
+    Route::get('/template-ct/sp/2', fn() => view('single_page.usaha-kami'));
+    Route::get('/template-ct/sp/3', fn() => view('single_page.noir-atelier'));
+    Route::get('/template-ct/sp/4', fn() => view('single_page.bengkel-sejahtera'));
 });

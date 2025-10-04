@@ -7,7 +7,7 @@
     <meta name="description"
         content="Profil usaha modern: katalog produk, tentang kami, testimoni, dan kontak. Desain premium, simple, profesional, dan mobile-first." />
     <meta name="theme-color" content="#0f172a" />
-    <title>UsahaKami</title>
+    <title>Centechno</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +54,7 @@
                                 d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 4.5 5 3-5 3-5-3ZM7 12.5l5 3 5-3v3l-5 3-5-3Z" />
                         </svg>
                     </span>
-                    <span class="text-lg font-semibold tracking-tight text-white" id="brand-name">UsahaKami</span>
+                    <span class="text-lg font-semibold tracking-tight text-white" id="brand-name">Centechno</span>
                 </a>
 
                 <div class="hidden md:flex items-center space-x-8">
@@ -456,7 +456,7 @@
                             </svg>
                             WhatsApp
                         </a>
-                        <a href="mailto:info@usahakami.com"
+                        <a href="mailto:info@centechno.com"
                             class="flex items-center gap-3 rounded-2xl border border-sky-200 bg-sky-50 px-4 py-4 text-sky-800 hover:bg-sky-100">
                             <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 13.065 1.5 6h21L12 13.065ZM1.5 7.875V18h21V7.875L12 15 1.5 7.875Z" />
@@ -485,7 +485,7 @@
                 </div>
 
                 <div class="overflow-hidden rounded-2xl ring-1 ring-slate-200">
-                    <iframe title="Lokasi UsahaKami"
+                    <iframe title="Lokasi Centechno"
                         src="https://maps.google.com/maps?q=Jakarta&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade" class="h-[320px] w-full"></iframe>
                 </div>
@@ -505,7 +505,7 @@
                                 d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm0 4.5 5 3-5 3-5-3ZM7 12.5l5 3 5-3v3l-5 3-5-3Z" />
                         </svg>
                     </span>
-                    <span class="text-lg font-semibold text-white">UsahaKami</span>
+                    <span class="text-lg font-semibold text-white">Centechno</span>
                 </div>
                 <p class="mt-4 max-w-md text-slate-400">Mitra tepercaya untuk solusi produk dan branding bisnis Anda.
                     Menyediakan layanan profesional dengan standar kualitas tinggi.</p>
@@ -523,7 +523,7 @@
             <div>
                 <h4 class="font-semibold text-white">Kontak</h4>
                 <ul class="mt-4 space-y-2 text-slate-400">
-                    <li>Email: info@usahakami.com</li>
+                    <li>Email: info@centechno.com</li>
                     <li>Telp: +62 812-3456-7890</li>
                     <li>Alamat: Jakarta, Indonesia</li>
                 </ul>
@@ -553,7 +553,7 @@
             </div>
         </div>
         <div class="border-t border-slate-800">
-            <div class="mx-auto max-w-7xl px-4 py-6 text-sm text-slate-500">© 2025 UsahaKami. All rights reserved.</div>
+            <div class="mx-auto max-w-7xl px-4 py-6 text-sm text-slate-500">© 2025 Centechno. All rights reserved.</div>
         </div>
     </footer>
 

@@ -403,53 +403,41 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
 
                 <!-- Savana Digital -->
-                <a href="{{ url('/savana-digital') }}" target="_blank"
+                <a href="{{ url('/template-ct/sp/1') }}" target="_blank"
                     class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
                     <img src="{{ asset('img/page-savana-digital.webp') }}" alt="Savana Digital"
                         class="w-full h-48 object-cover group-hover:scale-105 transition">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition">
-                            Savana Digital
-                        </h3>
                         <p class="text-gray-600">Template landing page digital agency modern.</p>
                     </div>
                 </a>
 
                 <!-- Noir Atelier -->
-                <a href="{{ url('/noir-atelier') }}" target="_blank"
+                <a href="{{ url('/template-ct/sp/3') }}" target="_blank"
                     class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
                     <img src="{{ asset('img/page-noir.webp') }}" alt="Noir Atelier"
                         class="w-full h-48 object-cover group-hover:scale-105 transition">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-pink-600 transition">
-                            Noir Atelier
-                        </h3>
                         <p class="text-gray-600">Template elegan untuk butik atau brand fashion.</p>
                     </div>
                 </a>
 
                 <!-- Bengkel Sejahtera -->
-                <a href="{{ url('/bengkel-sejahtera') }}" target="_blank"
+                <a href="{{ url('/template-ct/sp/4') }}" target="_blank"
                     class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
                     <img src="{{ asset('img/page-bengkel-sejahtera.webp') }}" alt="Bengkel Sejahtera"
                         class="w-full h-48 object-cover group-hover:scale-105 transition">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-green-600 transition">
-                            Bengkel Sejahtera
-                        </h3>
                         <p class="text-gray-600">Template website bengkel dengan info layanan & kontak.</p>
                     </div>
                 </a>
 
                 <!-- Usaha Kami -->
-                <a href="{{ url('/usaha-kami') }}" target="_blank"
+                <a href="{{ url('/template-ct/sp/2') }}" target="_blank"
                     class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
                     <img src="{{ asset('img/page-usaha-kami.webp') }}" alt="Usaha Kami"
                         class="w-full h-48 object-cover group-hover:scale-105 transition">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition">
-                            Usaha Kami
-                        </h3>
                         <p class="text-gray-600">Template company profile sederhana tapi profesional.</p>
                     </div>
                 </a>
@@ -460,14 +448,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Aurum Dining -->
-                <a href="{{ url('/aurum-dining') }}" target="_blank"
+                <a href="{{ url('/template-ct/mp/1') }}" target="_blank"
                     class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
                     <img src="{{ asset('img/page-aurum-dining.webp') }}" alt="Aurum Dining"
                         class="w-full h-48 object-cover group-hover:scale-105 transition">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-[#d4af37] transition">
-                            Aurum Dining
-                        </h3>
                         <p class="text-gray-600">Template website restoran elegan dengan menu & galeri.</p>
                     </div>
                 </a>

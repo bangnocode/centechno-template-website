@@ -6,7 +6,7 @@
             <!-- Brand Section -->
             <div class="text-center md:text-left">
                 <div class="mb-6">
-                    <span class="text-3xl font-bold text-[#d4af37] tracking-wider">AURUM</span>
+                    <span class="text-3xl font-bold text-[#d4af37] tracking-wider">CENTECHNO</span>
                     <div class="w-16 h-1 bg-gradient-to-r from-[#d4af37] to-yellow-500 mt-2 mx-auto md:mx-0"></div>
                 </div>
                 <p class="text-gray-300 text-sm leading-relaxed">
@@ -30,7 +30,7 @@
                             <path
                                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
-                        <span class="text-sm">contact@aurumdining.com</span>
+                        <span class="text-sm">contact@centechno.com</span>
                     </div>
                     <div class="flex items-center justify-center space-x-3">
                         <svg class="w-4 h-4 text-[#d4af37]" fill="currentColor" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@
         <div
             class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div class="text-sm text-gray-600">
-                &copy; 2025 Aurum Dining. All rights reserved.
+                &copy; 2025 Centechno. All rights reserved.
             </div>
             <div class="flex space-x-6 text-sm">
                 <a href="#" class="text-gray-500 hover:text-[#d4af37] transition-colors duration-300">Privacy

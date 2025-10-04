@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bengkel Motor Sejahtera</title>
+    <title>Centechno</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
 </head>
@@ -16,8 +16,7 @@
         <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#home" class="flex items-center">
                 <span
-                    class="self-center text-lg sm:text-xl md:text-2xl font-extrabold whitespace-nowrap text-red-600 tracking-wide">Bengkel
-                    Motor Sejahtera</span>
+                    class="self-center text-lg sm:text-xl md:text-2xl font-extrabold whitespace-nowrap text-red-600 tracking-wide">Centechno</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-400 rounded-lg md:hidden hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-red-600"
@@ -64,7 +63,7 @@
     <section id="about" class="py-16 px-4 bg-neutral-900">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-red-500 mb-5">Tentang Kami</h2>
-            <p class="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg">Sejak 2010, Bengkel Motor Sejahtera
+            <p class="text-gray-300 leading-relaxed text-sm sm:text-base md:text-lg">Sejak 2010, Centechno
                 hadir memberikan solusi servis motor harian, modifikasi, dan penjualan sparepart. Dengan tim mekanik
                 berpengalaman dan fasilitas modern, kami berkomitmen menjaga motor Anda tetap prima dan aman di jalan.
             </p>
@@ -218,8 +217,8 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-white mb-2">Email</h3>
-                    <p class="text-gray-400 text-sm mb-3">info@bengkel.com</p>
-                    <a href="mailto:info@bengkel.com"
+                    <p class="text-gray-400 text-sm mb-3">info@centechno.com</p>
+                    <a href="mailto:info@centechno.com"
                         class="inline-block bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-2 rounded-full text-xs font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-600/30">
                         Kirim Email
                     </a>
@@ -233,8 +232,8 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-white mb-2">Instagram</h3>
-                    <p class="text-gray-400 text-sm mb-3">@bengkelmotor</p>
-                    <a href="https://instagram.com/bengkelmotor" target="_blank"
+                    <p class="text-gray-400 text-sm mb-3">@centechno</p>
+                    <a href="https://instagram.com/centechno" target="_blank"
                         class="inline-block bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-6 py-2 rounded-full text-xs font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-600/30">
                         Lihat IG
                     </a>
@@ -257,7 +256,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-white mb-1">Alamat Bengkel</h4>
+                            <h4 class="font-semibold text-white mb-1">Alamat Centechno</h4>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
                                 Jl. Raya Otomotif No. 123, Jakarta
                             </p>
@@ -273,7 +272,7 @@
 
     <!-- Footer -->
     <footer class="bg-black/90 py-6 text-center text-gray-400 text-xs sm:text-sm">
-        <p>© 2025 Bengkel Motor Sejahtera | All Rights Reserved</p>
+        <p>© 2025 Centechno | All Rights Reserved</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>

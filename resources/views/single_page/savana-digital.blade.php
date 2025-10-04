@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Savana Digital Studio — layanan desain grafis, branding, dan web untuk UMKM & bisnis. Logo, website, dan konten sosial media profesional.">
+    content="Centechno — layanan desain grafis, branding, dan web untuk UMKM & bisnis. Logo, website, dan konten sosial media profesional.">
   <meta name="keywords" content="desain logo, branding UMKM, web design, social media content, studio desain">
-  <meta name="author" content="Savana Digital Studio">
+  <meta name="author" content="Centechno">
 
-  <title>Savana Digital Studio</title>
-  <link rel="icon" href="img/logo.png">
+  <title>Centechno</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
@@ -22,9 +21,9 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <div class="h-8 w-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-          <img src="{{asset('img/logo.png')}}" alt="Logo Savana" class="w-6 h-6">
+          <img src="{{asset('img/logo-ct.png')}}" alt="Logo Centechno" class="w-6 h-6">
         </div>
-        <span class="self-center text-lg font-semibold whitespace-nowrap text-white">Savana Digital Studio</span>
+        <span class="self-center text-lg font-semibold whitespace-nowrap text-white">Centechno</span>
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white md:hidden hover:bg-gray-100 hover:bg-opacity-10 rounded-lg transition-colors"
@@ -247,7 +246,7 @@
     <h1 class="mb-6 font-bold text-3xl text-start md:text-4xl text-white">Tentang Kami</h1>
     <div class="container-about-us text-white grid grid-cols-1 items-center justify-center gap-16 lg:grid-cols-2">
       <div data-aos="fade-right" data-aos-offset="25" class="text-base md:text-lg">
-        <p><span class="font-bold text-yellow-400">Savana Digital Studio</span> adalah studio desain yang fokus membantu usaha kecil, UMKM, dan brand lokal tumbuh melalui identitas visual yang kuat dan solusi digital praktis. Kami menggabungkan estetika desain dengan tujuan pemasaran untuk menghasilkan aset yang bukan hanya cantik, tapi juga mendatangkan pelanggan.</p>
+        <p><span class="font-bold text-yellow-400">Centechno</span> adalah studio desain yang fokus membantu usaha kecil, UMKM, dan brand lokal tumbuh melalui identitas visual yang kuat dan solusi digital praktis. Kami menggabungkan estetika desain dengan tujuan pemasaran untuk menghasilkan aset yang bukan hanya cantik, tapi juga mendatangkan pelanggan.</p>
         <p class="mt-4">Tim kami terdiri dari desainer, developer, dan content creator yang berpengalaman — siap mendampingi dari konsep hingga publikasi.</p>
       </div>
       <img src="{{ asset('img/undraw_designer_efwz.svg') }}" class="w-96 mx-auto" alt="Ilustrasi designer">
@@ -371,7 +370,7 @@
         </div>
       </a>
 
-      <a href="mailto:contact@savanadigital.id" class="rounded-3xl" data-aos="fade-left" data-aos-offset="25">
+      <a href="mailto:contact@centechno.id" class="rounded-3xl" data-aos="fade-left" data-aos-offset="25">
         <div
           class="container-telp border-2 border-gray-200 hover:border-blue-400 hover:shadow-lg transition-all rounded-3xl p-4 mb-4 flex gap-2 items-center text-base md:text-lg">
           <svg fill="#FF0000" viewBox="0 0 32 32" class="w-5 h-5" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M16.114-0.011c-6.559 0-12.114 5.587-12.114 12.204 0 6.93 6.439 14.017 10.77 18.998 0.017 0.020 0.717 0.797 1.579 0.797h0.076c0.863 0 1.558-0.777 1.575-0.797 4.064-4.672 10-12.377 10-18.998 0-6.618-4.333-12.204-11.886-12.204zM16.515 29.849c-0.035 0.035-0.086 0.074-0.131 0.107-0.046-0.032-0.096-0.072-0.133-0.107l-0.523-0.602c-4.106-4.71-9.729-11.161-9.729-17.055 0-5.532 4.632-10.205 10.114-10.205 6.829 0 9.886 5.125 9.886 10.205 0 4.474-3.192 10.416-9.485 17.657zM16.035 6.044c-3.313 0-6 2.686-6 6s2.687 6 6 6 6-2.687 6-6-2.686-6-6-6z"></path></svg>
@@ -382,9 +381,9 @@
   </div>
 
   <div class="p-10 bg-blue-900 text-center flex flex-col items-center">
-    <h1 class="mb-1 text-lg font-bold text-white md:text-xl flex items-center gap-2"><img src="./img/logo.png" class="w-12" alt="logo">SAVANA DIGITAL STUDIO</h1>
+    <h1 class="mb-1 text-lg font-bold text-white md:text-xl flex items-center gap-2"><img src="./img/logo.png" class="w-12" alt="logo">CENTECHNO</h1>
     <h2 class="mb-4 text-base font-semibold text-white md:text-lg">Desain Cerdas — Solusi Digital Berkualitas</h2>
-    <h1 class="text-sm font-semibold text-white md:text-base">© 2025 Savana Digital Studio. All rights reserved.</h1>
+    <h1 class="text-sm font-semibold text-white md:text-base">© 2025 Centechno. All rights reserved.</h1>
   </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
