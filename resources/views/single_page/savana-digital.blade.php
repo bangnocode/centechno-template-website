@@ -60,7 +60,7 @@
     </div>
   </nav>
 
-  <div id="home" class="h-screen w-full flex items-center justify-center bg-[url(./img/background.webp)] text-white bg-no-repeat bg-cover bg-center">
+  <div id="home" class="h-screen w-full flex items-center justify-center bg-[url(/img/background.webp)] text-white bg-no-repeat bg-cover bg-center">
     <div class="container-banner text-center">
       <h1 class="text-2xl font-bold mb-6 px-6 md:text-4xl">Desain <span class="text-yellow-400">Cerdas</span> <br>
         Solusi
@@ -381,7 +381,7 @@
   </div>
 
   <div class="p-10 bg-blue-900 text-center flex flex-col items-center">
-    <h1 class="mb-1 text-lg font-bold text-white md:text-xl flex items-center gap-2"><img src="./img/logo.png" class="w-12" alt="logo">CENTECHNO</h1>
+    <h1 class="mb-1 text-lg font-bold text-white md:text-xl flex items-center gap-2"><img src="{{asset('img/logo-ct.png')}}" class="w-12" alt="logo">CENTECHNO</h1>
     <h2 class="mb-4 text-base font-semibold text-white md:text-lg">Desain Cerdas — Solusi Digital Berkualitas</h2>
     <h1 class="text-sm font-semibold text-white md:text-base">© 2025 Centechno. All rights reserved.</h1>
   </div>
