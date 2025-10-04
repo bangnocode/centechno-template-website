@@ -63,7 +63,7 @@
     </nav>
 
     <div id="home"
-        class="h-screen w-full flex items-center justify-center bg-[url(./img/background.webp)] text-white bg-no-repeat bg-cover bg-center">
+        class="h-screen w-full flex items-center justify-center bg-blue-700 text-white bg-no-repeat bg-cover bg-center">
         <div class="container-banner text-center">
             <h1 class="text-2xl font-bold mb-6 px-6 md:text-4xl">Desain <span class="text-yellow-400">Cerdas</span> <br>
                 Solusi
