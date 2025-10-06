@@ -306,7 +306,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
                 <!-- Paket Website 1 Page -->
                 <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all">
@@ -385,6 +385,29 @@
                     <p class="mt-6 text-lg font-bold text-primary">Harga fleksibel <br> <span class="text-sm">(Mulai
                             dari Rp189.000)</span></p>
                 </div>
+
+                <!-- Domain & Hosting -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <!-- Icon Globe -->
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2c2.5 3 4 7 4 10s-1.5 7-4 10M12 2C9.5 5 8 9 8 12s1.5 7 4 10" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Domain & Hosting</h3>
+                    <p class="text-gray-600 mb-4">Paket lengkap untuk kebutuhan website Anda — dari domain hingga
+                        hosting siap pakai.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Gratis domain .my.id (domain lain sesuai permintaan)</li>
+                        <li>• Hosting cepat & aman selama 1 tahun</li>
+                        <li>• Termasuk SSL gratis untuk keamanan website</li>
+                        <li>• Bantuan setup awal & support teknis</li>
+                    </ul>
+                    <p class="mt-6 text-lg font-bold text-primary">Harga Fleksibel</p>
+                </div>
+
             </div>
         </div>
     </section>
