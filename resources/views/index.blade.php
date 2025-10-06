@@ -589,7 +589,7 @@
                     </div>
                     <h3 class="text-xl font-semibold text-slate-900 mb-2">WhatsApp</h3>
                     <p class="text-slate-600 mb-4">Diskusi cepat tentang website atau template</p>
-                    <a href="#" target="_blank"
+                    <a href="https://wa.me/6285187563635" target="_blank"
                         class="inline-flex items-center px-5 py-2 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition-colors">
                         Chat Sekarang
                     </a>
