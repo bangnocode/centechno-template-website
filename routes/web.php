@@ -11,7 +11,11 @@ Route::post('/survei', [SurveiController::class, 'store'])
     ->middleware(['guest', 'throttle:3,1']);
 
 // GET routes aman auto-refresh
-Route::middleware(['throttle:batas_spam', 'cache.response:300'])->group(function () {
+Route::middleware(['throttle:batas_spam'])->group(function () {
+
+    Route::get('/invoice/28354923', function(){
+        return view('invoice');
+    });
 
     // homepage
     Route::get('/', function () {

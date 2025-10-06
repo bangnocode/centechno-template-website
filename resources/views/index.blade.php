@@ -457,7 +457,7 @@
                     </div>
                 </a>
 
-                <!-- Dewan Ambalan Esemkasa -->
+                {{-- <!-- Dewan Ambalan Esemkasa -->
                 <a href="{{ url('/da-esemkasa') }}" target="_blank"
                     class="group block bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden">
                     <img src="{{ asset('img/page-da-esemkasa.png') }}" alt="Aurum Dining"
@@ -468,7 +468,7 @@
                         </h3>
                         <p class="text-gray-600">Template website organisasi dengan Beranda, Kegiatan, Galeri, Berita</p>
                     </div>
-                </a>
+                </a> --}}
 
             </div>
         </div>
