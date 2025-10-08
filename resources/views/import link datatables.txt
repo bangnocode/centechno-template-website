@@ -1,0 +1,2 @@
+css : //cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css
+js : //cdn.datatables.net/2.3.4/js/dataTables.min.js

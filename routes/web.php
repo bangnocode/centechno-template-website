@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BukuTamuController;
 use App\Http\Controllers\SurveiController;
 use App\Models\MenuAurumDining;
 use Illuminate\Support\Facades\Route;
@@ -11,7 +12,18 @@ Route::post('/survei', [SurveiController::class, 'store'])
     ->middleware(['guest', 'throttle:3,1']);
 
 // GET routes aman auto-refresh
-Route::middleware(['throttle:batas_spam', 'cache.response:300'])->group(function () { //'cache.response:300'
+Route::middleware(['throttle:batas_spam'])->group(function () { //'cache.response:300'
+
+    Route::get('/app/buku-tamu', [BukuTamuController::class, 'index'])->name('buku.tamu.index');
+    Route::get('/app/buku-tamu/login-admin', [BukuTamuController::class, 'showLogin'])->name('buku.tamu.login.index');
+    Route::post('/app/buku-tamu/login-admin/store', [BukuTamuController::class, 'loginStore'])->name('buku.tamu.login.store');
+    Route::middleware(['cekLogin.BukuTamu'])->group(function () {
+        Route::get('/app/buku-tamu/dashboard', [BukuTamuController::class, 'dashboard'])->name('buku.tamu.dashboard.index');
+        Route::get('/app/buku-tamu/dashboard/data', [BukuTamuController::class, 'getData'])->name('buku.tamu.dashboard.data');
+        Route::delete('/app/buku-tamu/dashboard/destroy/{id}', [BukuTamuController::class, 'destroy'])->name('buku.tamu.dashboard.destroy');
+        Route::post('/app/buku-tamu/store', [BukuTamuController::class, 'store'])->name('buku.tamu.store');
+        Route::post('/app/buku-tamu/logout', [BukuTamuController::class, 'logout'])->name('buku.tamu.logout');
+    });
 
     Route::get('/invoice/28354923', function () {
         return view('invoice');
